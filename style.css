@@ -1,0 +1,536 @@
+/*=====================================================
+    Common CSS
+========================================================*/
+
+
+body {
+    margin: 0;
+    color: #666666;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+    clear: both;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*====================================================
+    Top Header CSS
+======================================================*/
+.header_area {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#top_header_area {
+    background-color: #ba2e1f;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.inner_top_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mini_menu {
+    flex-shrink: 1;
+    color: rgb(255, 255, 255);
+    width: 70%;
+    padding-top: 5px;
+}
+
+.mini_menu ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.mini_menu ul li {
+    display: inline-block;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 2px solid;
+}
+
+.mini_menu ul li:last-child {
+    border-right: none;
+}
+
+.mini_menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: color 0.5s;
+}
+
+.mini_menu ul li a:hover {
+    color: rgba(241, 184, 113, 0.897);
+}
+
+.search_area {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    max-width: 210px;
+    width: 30%;
+    overflow: hidden;
+}
+
+.search_area form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    width: 96%;
+}
+
+.search_area input {
+    width: 75%;
+    border: none;
+    outline: none;
+}
+
+.search_area input[type="submit"] {
+    margin-left: auto;
+    background: url(img/search.png) no-repeat center;
+    width: 20px;
+    cursor: pointer;
+}
+
+/*=======================================================
+    Main Header CSS
+=========================================================*/
+#main_header_area {
+    width: 100%;
+    clear: both;
+}
+
+.inner_header {
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.logo_area {
+    /* float: left; */
+    flex-basis: 35%;
+}
+
+.social_area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-shrink: 1;
+    flex-basis: 65%;
+}
+
+.social_area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.social_area ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.social_area ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+.social_area ul li a i {
+    background: #333333;
+    padding-top: 8px;
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.social_area ul li a:hover i {
+    background: rgba(241, 184, 113, 0.897);
+}
+
+
+/*=======================================================
+    Main Menu CSS
+=========================================================*/
+
+
+#main_menu {
+    width: 100%;
+    clear: both;
+}
+
+.inner_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#333333 50%, #2b2b2b 0%);
+    border-radius: 5px;
+    height: 40px;
+}
+
+.menu_links {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.menu_links li {
+    position: relative;
+}
+
+.menu_links li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.menu_links li:hover .gen-1-a {
+    color: #ba2e1f;
+}
+
+/*------DropDown----------*/
+.dropdown ul {
+    flex-direction: column;
+    align-items: center;
+    background-color: #ba2e1f;
+    visibility: hidden;
+    position: absolute;
+    transition: visibility 0.5s ease;
+    width: 150px;
+    z-index: 1000;
+}
+
+.dropdown ul li {
+    width: 100%;
+}
+
+.dropdown ul li a {
+    transition: background-color 0.8s;
+}
+
+.parent-1:hover .dropdown-child-gen-1 {
+    visibility: visible;
+}
+
+.parent-2:hover .dropdown-child-gen-2 {
+    visibility: visible;
+}
+
+.dropdown-child-gen-1 {
+    top: 32px;
+    left: 0px;
+}
+
+.dropdown-child-gen-1 li:hover .gen-2-a {
+    background-color: #2b2b2b;
+}
+
+.dropdown-child-gen-2 {
+    top: 0px;
+    left: 150px;
+}
+
+.dropdown-child-gen-2 li:hover .gen-3-a {
+    background-color: #2b2b2b;
+}
+
+/*=======================================================
+    Main CSS  [Slider Area]
+ =========================================================*/
+#slider-area {
+
+    padding: 40px 0;
+
+}
+
+/*=======================================================
+    Main CSS  [Hero Area]
+ =========================================================*/
+.inner-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.hero-img {
+    flex-basis: 40%;
+}
+
+.hero-text {
+    flex-basis: 55%;
+}
+
+.hero-text h1 {
+    font-size: 86px;
+    color: #000;
+    line-height: 1.2em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+/*=======================================================
+    Main CSS  [Work Area]
+ =========================================================*/
+
+#work-area {
+    background-color: #f2f2f2;
+}
+
+.inner-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 40px 0;
+}
+
+.work-item {
+    width: 30%;
+}
+
+.work-title {
+    color: #333333;
+    font-size: 26px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.service {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.service-logo {
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+}
+
+.service-text {
+    width: 75%;
+}
+
+.service-text h3 {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.service-text p {
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 1.3em;
+}
+
+.work-item-link {
+    color: #b92d1f;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    width: 155px;
+    text-align: right;
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.work-item-link:hover {
+    transform: scale(1.1);
+}
+
+.client-title {
+    background: url(img/colon.png) no-repeat center left;
+    padding: 15px 0 15px 60px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #989898;
+
+}
+
+.client-title span {
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #dfd1d1;
+}
+
+.client-text {
+    margin-top: 0;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+.about-us-pic {
+    box-sizing: border-box;
+    height: 150px;
+    width: 100%;
+    border: 2px solid #666666;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.about-us-text {
+    font-size: 13px;
+    color: #666666;
+}
+
+/*=======================================================
+    Footer CSS
+=========================================================*/
+
+
+.inner-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 30px 0;
+}
+
+.footer-item {
+    border-top: 1px solid #666666;
+    width: 22%;
+}
+
+.footer-item h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-bottom: 30px;
+}
+
+.footer-item p {
+    font-size: 14px;
+}
+
+.user-name {
+    color: #b92d1f;
+    text-decoration: none;
+}
+
+.footer-item p span {
+    color: #766e6e;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.quick-link {
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 10px;
+}
+
+.quick-link a {
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #666666;
+    transition: color .5s;
+}
+
+.quick-link a:hover {
+    color: #b92d1f;
+}
+
+.footer-form input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f2f2f2;
+
+}
+
+.footer-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 110px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.footer-form input[type='submit'] {
+    width: 50%;
+    color: #b92d1f;
+    cursor: pointer;
+}
+
+.blog-title {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.blog-author {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.blog-link {
+    color: #b92d1f;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    text-align: right;
+}
+
+#copyright {
+    height: 65px;
+    background-color: #f2f2f2;
+}
+
+.inner-copyright {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-text {
+    display: inline-block;
+    color: #919191;
+    font-size: 12px;
+}
